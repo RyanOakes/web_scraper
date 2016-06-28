@@ -14,14 +14,18 @@ def main():
 
     clear()
 
-    html = urlopen("http://radiohead.com")
+    html = urlopen("http://oakesphere.com")
 
     soup = BeautifulSoup(html, "html.parser")
 
     # print(soup.prettify())
 
-    for link in soup.find_all('a'):
-        print(link.get('href'))
+    # Get all links
+    # for link in soup.find_all('a'):
+    #     print(link.get('href'))
+
+    # Extract all text
+    # print(soup.get_text())
 
 
 if __name__ == '__main__':
